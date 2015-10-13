@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}
+    Startpage
+{% endblock %}
+{% block body %}
+    <h1>Current questions</h1>
+    <ul>
+        {% for question in questions %}
+            <li><a href="{% url "question" id=question.id %}">{{ question.title }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}
