@@ -1,2 +1,2 @@
-django==2.0.9
-requests==2.20.0
+django==2.2.3
+requests==2.22.0
